@@ -1,0 +1,205 @@
+/* -------------------------- */
+/* === */ /* NavBar */ /* === */
+/* -------------------------- */
+
+.header 
+{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.navBar 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* btn-nav */
+.btn-nav 
+{
+    padding: 6px 50px;
+    color: black;
+    text-decoration: none;
+    outline: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+    -moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -ms-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+    .btn-nav .large
+    {
+        padding: 6px 40px;
+    }
+    .btn-nav:hover 
+    {
+        border: 1px solid #009688;
+        border-radius: 8px;
+    }
+    .sub-nav-btn
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+/* Logo */
+.logo 
+{
+   
+}
+    .logo:hover
+    {
+        cursor: pointer;
+    }
+    .logo img 
+    {
+        height: 55px;
+    }
+
+/* dropdown-item */
+.dropdown-item 
+{
+    position: relative;
+    z-index: 1000;
+    display: none;
+    height: auto;
+    width: 200px;
+    border: 1px solid #009688;
+    border-radius: 8px;
+    background-color: white;
+}
+    .dropdown-item > div 
+    {
+        position: relative;
+        padding: 10px 10px;
+        border-top: 1px solid #009688;
+    }
+    .dropdown-item > div:first-child 
+    {
+        border-top: none;
+    }
+
+
+/* .NavMenu */
+.navMenu
+{
+    position: relative;
+}
+    .navMenu:hover .dropdown-item-1 
+    {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        display: block;
+    }
+
+
+/* .dropdown-second  */
+.dropdown-second 
+{
+    position: absolute;
+    top: -1px;
+    right: -200px;
+}
+    .dropdown-second > div 
+    {
+        border-left: none;
+    }
+
+
+/* .subNavMenu, etc... */
+.subNavMenu
+{
+    transition: background-color 250ms ease-in-out;
+    display: flex;
+}
+    .subNavMenu:hover
+    {
+        background-color: #00968792;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .subNavMenu > span 
+    {
+        visibility: hidden;
+        padding-left: 2%;
+        transition: padding-left 250ms ease-in-out;
+    }
+    .subNavMenu:hover span 
+    {
+        visibility: visible;
+        padding-left: 30%;
+    }
+    .subNavMenu:hover .dropdown-second 
+    {
+        display: block;
+    }
+
+
+/* -------------------------- */
+/* === */ /* Sticky */ /* === */
+/* -------------------------- */
+
+/* sticky ajouté en JS */
+
+#NavBar
+{
+    background-color: white;
+}
+
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+    .sticky
+    {
+        padding-top: 150px;
+    }
+
+
+/* -------------------------------- */    
+/* ---- */ /* Media Querries /* --- */ 
+/* -------------------------------- */
+@media (min-width: 1024px) 
+{
+    .navMenu:hover .dropdown-item-1 
+    {
+        top: 30px;
+    }
+    .btn-nav 
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) 
+{
+    .logo img 
+    {   
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
+@media (min-width: 1920px) 
+{
+    .logo img 
+    {   
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+
+
+    
+
