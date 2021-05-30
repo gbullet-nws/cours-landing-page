@@ -136,19 +136,25 @@
             </nav>
         </header>  
 
+        <div class="BannerSection">
+            <!-- <img id="BannerIMG" src="assets/img/bannerIMG.jpg"> -->
+            <div class="banner-buttons">
+                <button class="banner-btn"> À propos </button>
+                <button class="banner-btn"> Contact </button>
+            </div>
+        </div>
+        <br>
+
         <!-- Main -->
         <main>
 
-            <div class="BannerScetion">
 
-            </div>
-
-            <h2 class="Title"> Nos Prestations </h2>
+            <h2 class="Title"> Nos prestations </h2>
 
             <section class="block-wrapper">
+                <h3 class="block-sub-title"> En activité depuis 11 ans </h3>
                 <div class="block-container">
-                    <h3 class="block-sub-title"> En activité depuis 7 ans </h3>
-                    <img src="assets/img/placeholder.png">
+                    <img class="image-block" src="assets/img/placeholder.png" alt="Image de présenation des prestations">
                     <p class="block-text"> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Aenean maximus eleifend posuere. Donec non libero dapibus, 
@@ -160,10 +166,22 @@
                         Fusce augue augue, congue et placerat quis, tempor id lacus. Curabitur a massa ipsum.
                     </p>
                 </div>
-              
+                <div class="buttons-presentation">
+                    <button> Évènementiel </button>
+                    <button> Conventions </button>
+                    <button> Meetings </button>
+                    <button> Professionnels </button>
+                    <button> Particuliers </button>
+                </div>
+               
+
             </section>
 
-            <br> <br> <br>
+            <br> <br> <br> <br> <br> <br>
+
+           
+
+            <br> <br> <br> <br> <br> <br>
 
         </main>
 
@@ -173,45 +191,33 @@
             <hr>
 
             <div class="wrapper-footer">
-
-                <!-- col 1 footer -->
+                <!-- container 1 footer -->
                 <div class="container-1-footer">
-                    <img class="logo-footer" src="assets/img/logo-300.png">
                     <p class="text-footer"> 
-                        NomSociété <br>
+                        NomSociété <br><br>
                         1 Avenue des champs Élysées <br>
                         75000 Paris  
-                    </p>
-                    <p class="text-footer"> 
+                        <br> <br>
                         01 02 03 04 05<br>
-                    </p>
-                    <p class="text-footer"> 
+                        <br> <br>
                         info@NomSociété.com <br>
                         contact@NomSociété.com
                     </p>
-                    <div class="icons-rs-footer">
-                        <img class="logo-rs-footer" src="assets/img/facebook.svg">
-                        <img class="logo-rs-footer" src="assets/img/gmail.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/linkedin.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/youtube.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/phone.svg"> 
-                        <img class="logo-rs-footer" src="assets/img/instagram-logo.svg">
-                    </div>
                 </div>
-
-                <!-- col 2 footer -->
+                <!-- container 2 footer -->
                 <div class="container-2-footer">
                     <div class="googleMap"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1541.948143684911!2d0.6199044583243815!3d49.39064849483576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0549bb0d5467f%3A0xbb149d61f00c7ac7!2s2%20Place%20de%20la%20Mairie%2C%2027500%20Bourneville-Sainte-Croix!5e1!3m2!1sen!2sfr!4v1621340208530!5m2!1sen!2sfr" 
-                                width="300" height="300" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.4704014715458!2d2.3061452515380836!3d48.869724579187036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4577d8feb%3A0x1278ce3d6f5dffe5!2s1%20Av.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris!5e1!3m2!1sen!2sfr!4v1621609553869!5m2!1sen!2sfr" 
+                            width="300" 
+                            height="300" 
+                            style="border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
                         </iframe>
                     </div>
                 </div>
-
-                <!-- col 3 footer -->
+                <!-- container 3 footer -->
                 <div class="container-3-footer">
                     <div class="icons-rs-footer">
                         <img class="logo-rs-footer" src="assets/img/facebook.svg">
@@ -223,10 +229,15 @@
                     </div>
                 </div>
 
-                <!-- col 4 footer -->
+                <!-- container 4 footer -->
                 <div class="container-4-footer">
                     <div class="newsLetter"> 
-                        <input> 
+                        <p class="text-footer"> 
+                            NewsLetter <br><br>
+                            Laissez-nous votre e-mail <br><br>
+                            
+                        </p>
+                        <input class="inputNewsLetter">
                     </div>
                 </div>
 

@@ -50,7 +50,7 @@
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 .block-container-type2 
 {
@@ -71,9 +71,11 @@
     .block-text
     {
         color: black;
-        font-size: 18px;
-        width: 100%;
+        font-size: 22px;
+        width: 55%;
         margin: 0 auto;
+        align-self: center;
+        text-align: justify;
     }
     .block-text-information
     {
@@ -115,8 +117,9 @@
 }
     .image-block
     {
-        width: 300px;
+        width: 400px;
         border-radius: 8px;
+        margin: 0 auto;
     }
     .image-block-type2
     {
@@ -197,34 +200,49 @@
         font-size: 30px;
         font-weight: 100;
     }
+
     .block-wrapper
     {
         flex-direction: column;
         align-content: center;
         margin-bottom: 10vw;
     }
+
     .block-container
     {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        align-items: center;
     }
+        .block-sub-title 
+        {
+            text-align: center;
+        }
+        .block-text
+        {
+            padding-top: 4vw;
+        }
+
     .block-container-type2 
     {
         width: 60%;
         margin-bottom: 2vw;
     }
+
     .block-container-images
     {
         justify-content: center;
     }
+
     .block-sub-container-images
     {
         display: flex;
         justify-content: center;
         text-align: center;
     }
+
     .image-block
     {
         width: 375px;
@@ -236,72 +254,25 @@
 
 @media (max-width: 1024px) 
 {
-    .block-container-type2 
-    {
-        width: 90%;
-    }
-    .image-block
-    {
-        width: 350px;
-        margin: 1vw;
-    }
-    .image-block-type2 {
-        width: 350px;
-    }
+   
 }
 
 @media (min-width: 1440px) 
 {
-    .image-block
-    {
-        width: 400px;
-        margin: 1vw;
-    }
-    .image-block-type2 {
-        width: 400px;
-    }
+    
 }
 
 @media (min-width: 1920px) 
 {
-    .image-block
-    {
-        width: 450px;
-        margin: 1vw;
-    }
-    .image-block-type2 {
-        width: 450px;
-    }
+    
 }
 
 @media (min-width: 2560px) 
 {
-    .block-container-type2 
-    {
-        width: 50%;
-    }
-    .image-block
-    {
-        margin: 1vw;
-        width: 550px;
-    }
-    .image-block-type2 {
-        width: 550px;
-    }
+    
 }
 
 @media (min-width: 2561px) 
 {
-    .block-container-type2 
-    {
-        width: 55%;
-    }
-    .image-block
-    {
-        margin: 1vw;
-        width: 650px;
-    }
-    .image-block-type2 {
-        width: 650px;
-    }
+    
 }
