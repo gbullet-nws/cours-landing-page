@@ -91,11 +91,14 @@ hr
 }
 
 /* News letter */
-
-.inputNewsLetter
+.newsLetter
 {
     text-align: center;
 }
+    .inputNewsLetter
+    {
+        text-align: center;
+    }
 
 
 /* --------------------------------- */
@@ -130,21 +133,73 @@ hr
 /* ---- */ /* Media Querries */ /* ---- */ 
 /* ------------------------------------ */
 
-@media (max-width: 768px) 
+@media (max-width: 1024px) 
 {
     .wrapper-footer
     {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        margin-bottom: 3vw;
     }
+        .container-1-footer
+        {
+            width: 49%;
+        }
+        .container-2-footer
+        {
+            width: 49%;
+        }
+        .container-3-footer
+        {
+            width: 49%;
+        }
+        .container-4-footer
+        {
+            width: 49%;
+        }
 
     .logo-footer
     {
         margin-top: 2vw;
     }
+
+    .logo-rs-footer 
+    {
+        width: 30px;
+        margin: 3vw;
+    }
 }
 
 
+@media (max-width: 768px) 
+{
+
+    .logo-footer
+    {
+        margin-top: 2vw;
+    }
+
+    .logo-rs-footer 
+    {
+        width: 30px;
+        margin: 3vw;
+    }
+}
+
+@media (max-width: 625px)
+{
+    .wrapper-footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3vw;
+    }
+        .container-1-footer, .container-2-footer,
+        .container-3-footer, .container-4-footer
+        {
+            width: 100%;
+            margin: 1vw;
+        }
+}   
 
