@@ -182,7 +182,7 @@ button
     .buttons-presentation 
     {
         display: flex;
-        margin-top: 80px;
+        margin-top: 20px;
         justify-content: center;
     }
     main

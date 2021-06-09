@@ -81,7 +81,7 @@
         width: 80%;
         margin-bottom: 2vw;
     }
-    .block-text, .block-text-type2
+    .block-text
     {
         color: black;
         font-size: 22px;
@@ -89,6 +89,17 @@
         margin: 0 auto;
         align-self: center;
         text-align: justify;
+    }
+    .block-text-type2
+    {
+        color: black;
+        font-size: 22px;
+        width: 250px;
+        margin: 0 auto;
+        align-self: center;
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .block-text-information
     {
@@ -181,9 +192,8 @@
     }
     .block-text-type2
     {
-        width: none;
+        width: initial;
     }
-}
 
 
 @media (max-width: 768px) 
@@ -224,7 +234,7 @@
 
     .block-container-type2 
     {
-        width: 60%;
+        width: 100%;
         margin-bottom: 2vw;
     }
 

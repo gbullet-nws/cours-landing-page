@@ -20,6 +20,7 @@ hr
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto;
 }
     .container-1-footer
     {
